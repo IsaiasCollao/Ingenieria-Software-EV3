@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel Ejecutivo - IMMOBILIS</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+
+<nav class="navbar navbar-dark bg-dark">
+
+    <div class="container-fluid">
+
+        <span class="navbar-brand">
+            IMMOBILIS | Ejecutivo Comercial
+        </span>
+
+        <button class="btn btn-outline-light">
+            Cerrar Sesión
+        </button>
+
+    </div>
+
+</nav>
+
+<div class="container-fluid">
+
+<div class="row">
+
+<!-- SIDEBAR -->
+
+<div class="col-md-2 sidebar">
+
+    <h5 class="mt-4">Operaciones</h5>
+
+    <ul class="nav flex-column">
+
+        <li class="nav-item">
+            <a class="nav-link active" href="#">
+                Dashboard
+            </a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="#">
+                Propiedades
+            </a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="#">
+                Arriendos
+            </a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="#">
+                Ventas
+            </a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="#">
+                Contratos
+            </a>
+        </li>
+
+    </ul>
+
+</div>
+
+<!-- CONTENIDO -->
+
+<div class="col-md-10 p-4">
+
+<h2>Gestión Operativa</h2>
+
+<!-- KPIs -->
+
+<div class="row my-4">
+
+    <div class="col-md-3">
+
+        <div class="card dashboard-card">
+            <div class="card-body">
+                <h6>Propiedades Activas</h6>
+                <h3>124</h3>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="col-md-3">
+
+        <div class="card dashboard-card">
+            <div class="card-body">
+                <h6>Reservas Pendientes</h6>
+                <h3>15</h3>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="col-md-3">
+
+        <div class="card dashboard-card">
+            <div class="card-body">
+                <h6>Ventas del Mes</h6>
+                <h3>8</h3>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="col-md-3">
+
+        <div class="card dashboard-card">
+            <div class="card-body">
+                <h6>Arriendos Vigentes</h6>
+                <h3>47</h3>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<!-- INVENTARIO PROPIEDADES -->
+
+<div class="card shadow-sm mb-4">
+
+<div class="card-header">
+    Mantenedor de Propiedades
+</div>
+
+<div class="card-body">
+
+<form>
+
+<div class="row">
+
+<div class="col-md-6 mb-3">
+
+<label>Dirección</label>
+
+<input type="text"
+       class="form-control">
+
+</div>
+
+<div class="col-md-6 mb-3">
+
+<label>Propietario</label>
+
+<input type="text"
+       class="form-control">
+
+</div>
+
+</div>
+
+<div class="row">
+
+<div class="col-md-4 mb-3">
+
+<label>Tipo Propiedad</label>
+
+<select class="form-select">
+
+<option>Casa</option>
+<option>Departamento</option>
+<option>Oficina</option>
+<option>Bodega</option>
+<option>Estacionamiento</option>
+
+</select>
+
+</div>
+
+<div class="col-md-4 mb-3">
+
+<label>Estado</label>
+
+<select class="form-select">
+
+<option>Disponible</option>
+<option>Reservada</option>
+<option>Arrendada</option>
+<option>Vendida</option>
+
+</select>
+
+</div>
+
+<div class="col-md-4 mb-3">
+
+<label>Valor</label>
+
+<input type="number"
+       class="form-control">
+
+</div>
+
+</div>
+
+<div class="row">
+
+<div class="col-md-4 mb-3">
+
+<label>Metros Patio</label>
+
+<input type="number"
+       class="form-control">
+
+</div>
+
+<div class="col-md-4 mb-3">
+
+<label>Patente Comercial</label>
+
+<input type="text"
+       class="form-control">
+
+</div>
+
+<div class="col-md-4 mb-3">
+
+<label>Metros Construidos</label>
+
+<input type="number"
+       class="form-control">
+
+</div>
+
+</div>
+
+<button class="btn btn-success">
+    Guardar Propiedad
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+<!-- FORMULARIO VENTA -->
+
+<div class="card shadow-sm mb-4">
+
+<div class="card-header">
+    Cierre de Venta
+</div>
+
+<div class="card-body">
+
+<div class="row">
+
+<div class="col-md-3 mb-3">
+
+<label>Tasación</label>
+
+<input type="number"
+       class="form-control">
+
+</div>
+
+<div class="col-md-3 mb-3">
+
+<label>Banco</label>
+
+<select class="form-select">
+
+<option>Banco Estado</option>
+<option>Santander</option>
+<option>BCI</option>
+
+</select>
+
+</div>
+
+<div class="col-md-3 mb-3">
+
+<label>Notaría</label>
+
+<input type="text"
+       class="form-control">
+
+</div>
+
+<div class="col-md-3 mb-3">
+
+<label>Conservador BR</label>
+
+<input type="text"
+       class="form-control">
+
+</div>
+
+</div>
+
+<button class="btn btn-primary">
+    Registrar Venta
+</button>
+
+</div>
+
+</div>
+
+<!-- CONTRATO ARRIENDO -->
+
+<div class="card shadow-sm mb-4">
+
+<div class="card-header">
+    Contrato de Arriendo
+</div>
+
+<div class="card-body">
+
+<div class="row">
+
+<div class="col-md-4 mb-3">
+
+<label>Liquidaciones</label>
+
+<input type="file"
+       class="form-control">
+
+</div>
+
+<div class="col-md-4 mb-3">
+
+<label>Cédula Identidad</label>
+
+<input type="file"
+       class="form-control">
+
+</div>
+
+<div class="col-md-4 mb-3">
+
+<label>Documentos Aval</label>
+
+<input type="file"
+       class="form-control">
+
+</div>
+
+</div>
+
+<button class="btn btn-warning">
+    Generar Contrato
+</button>
+
+</div>
+
+</div>
+
+<!-- SEGUROS -->
+
+<div class="card shadow-sm">
+
+<div class="card-header">
+    Simulación de Seguros
+</div>
+
+<div class="card-body">
+
+<table class="table table-striped">
+
+<thead>
+
+<tr>
+    <th>Compañía</th>
+    <th>Plan</th>
+    <th>Valor Mensual</th>
+    <th>Seleccionar</th>
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+    <td>Seguros Chile</td>
+    <td>Básico</td>
+    <td>$8.500</td>
+    <td>
+        <input type="radio" name="seguro">
+    </td>
+</tr>
+
+<tr>
+    <td>Seguros Chile</td>
+    <td>Premium</td>
+    <td>$14.900</td>
+    <td>
+        <input type="radio" name="seguro">
+    </td>
+</tr>
+
+<tr>
+    <td>Protección Hogar</td>
+    <td>Full</td>
+    <td>$19.500</td>
+    <td>
+        <input type="radio" name="seguro">
+    </td>
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
