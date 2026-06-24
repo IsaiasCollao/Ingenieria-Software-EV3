@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Cliente - IMMOBILIS</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+
+<!-- NAVBAR -->
+
+<nav class="navbar navbar-dark bg-dark">
+    <div class="container-fluid">
+
+        <span class="navbar-brand">
+            IMMOBILIS | Portal Cliente
+        </span>
+
+        <div>
+            <span class="text-white me-3">
+                Bienvenido, Juan Pérez
+            </span>
+
+            <button class="btn btn-outline-light">
+                Cerrar Sesión
+            </button>
+        </div>
+
+    </div>
+</nav>
+
+<div class="container-fluid">
+
+    <div class="row">
+
+        <!-- SIDEBAR -->
+
+        <div class="col-md-2 sidebar">
+
+            <h5 class="mt-4">Menú</h5>
+
+            <ul class="nav flex-column">
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">
+                        Dashboard
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        Mis Datos
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        Contratos
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        Pagos
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+        <!-- CONTENIDO -->
+
+        <div class="col-md-10 p-4">
+
+            <h2>Panel de Cliente</h2>
+
+            <!-- RESUMEN -->
+
+            <div class="row my-4">
+
+                <div class="col-md-4">
+
+                    <div class="card dashboard-card">
+
+                        <div class="card-body">
+
+                            <h6>Contrato Vigente</h6>
+
+                            <h4>
+                                AR-2026-001
+                            </h4>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-4">
+
+                    <div class="card dashboard-card">
+
+                        <div class="card-body">
+
+                            <h6>Próximo Pago</h6>
+
+                            <h4>
+                                05/07/2026
+                            </h4>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-4">
+
+                    <div class="card dashboard-card">
+
+                        <div class="card-body">
+
+                            <h6>Estado</h6>
+
+                            <h4 class="text-success">
+                                Al Día
+                            </h4>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- ACTUALIZACIÓN DE DATOS -->
+
+            <div class="card shadow-sm mb-4">
+
+                <div class="card-header">
+
+                    Actualización de Datos Personales
+
+                </div>
+
+                <div class="card-body">
+
+                    <form>
+
+                        <div class="row">
+
+                            <div class="col-md-6 mb-3">
+
+                                <label>Nombre Completo</label>
+
+                                <input type="text"
+                                       class="form-control"
+                                       value="Juan Pérez">
+
+                            </div>
+
+                            <div class="col-md-6 mb-3">
+
+                                <label>Correo</label>
+
+                                <input type="email"
+                                       class="form-control"
+                                       value="juan@email.cl">
+
+                            </div>
+
+                        </div>
+
+                        <div class="row">
+
+                            <div class="col-md-6 mb-3">
+
+                                <label>Teléfono</label>
+
+                                <input type="text"
+                                       class="form-control"
+                                       value="+56912345678">
+
+                            </div>
+
+                            <div class="col-md-6 mb-3">
+
+                                <label>Dirección</label>
+
+                                <input type="text"
+                                       class="form-control">
+
+                            </div>
+
+                        </div>
+
+                        <button class="btn btn-primary">
+                            Actualizar Información
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+            <!-- PREFERENCIAS -->
+
+            <div class="card shadow-sm mb-4">
+
+                <div class="card-header">
+
+                    Preferencias de Notificación
+
+                </div>
+
+                <div class="card-body">
+
+                    <div class="form-check form-switch">
+
+                        <input class="form-check-input"
+                               type="checkbox"
+                               checked>
+
+                        <label class="form-check-label">
+
+                            Recibir recordatorios automáticos de pago
+
+                        </label>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- HISTORIAL FINANCIERO -->
+
+            <div class="card shadow-sm">
+
+                <div class="card-header">
+
+                    Historial Financiero
+
+                </div>
+
+                <div class="card-body">
+
+                    <table class="table table-striped">
+
+                        <thead>
+
+                        <tr>
+                            <th>Fecha</th>
+                            <th>Concepto</th>
+                            <th>Monto</th>
+                            <th>Estado</th>
+                        </tr>
+
+                        </thead>
+
+                        <tbody>
+
+                        <tr>
+                            <td>05-01-2026</td>
+                            <td>Arriendo Enero</td>
+                            <td>$450.000</td>
+                            <td>
+                                <span class="badge bg-success">
+                                    Pagado
+                                </span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>05-02-2026</td>
+                            <td>Arriendo Febrero</td>
+                            <td>$450.000</td>
+                            <td>
+                                <span class="badge bg-success">
+                                    Pagado
+                                </span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>05-03-2026</td>
+                            <td>Arriendo Marzo</td>
+                            <td>$450.000</td>
+                            <td>
+                                <span class="badge bg-success">
+                                    Pagado
+                                </span>
+                            </td>
+                        </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
