@@ -1,3 +1,16 @@
+# IMMOBILIS
+
+## Prototipo Web - Sistema de Gestión Inmobiliaria
+
+### Integrantes
+- Isaías Collao Huerta
+
+### Tecnologías Utilizadas
+- HTML5
+- CSS3
+- Bootstrap 5
+- GitHub
+
 ## Registro de Control de Cambios
 
 | Versión | Componente / Pantalla Modificada | Descripción del Cambio Realizado |
